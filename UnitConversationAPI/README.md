@@ -70,8 +70,7 @@ dotnet run
 The terminal will display the local URLs, for example:
 
 ```text
-http://localhost:5000
-https://localhost:7000
+http://localhost:5206
 ```
 
 Use the URL shown by your terminal.
@@ -142,7 +141,7 @@ Use the URL shown by your terminal.
 ## Testing with cURL
 
 ```bash
-curl -X POST "http://localhost:5000/api/conversion" ^
+curl -X POST "http://localhost:5206/api/conversion" ^
   -H "Content-Type: application/json" ^
   -d "{"value":10,"from":"km","to":"m"}"
 ```
@@ -151,7 +150,7 @@ On PowerShell, you can use:
 
 ```powershell
 Invoke-RestMethod `
-  -Uri "http://localhost:5000/api/conversion" `
+  -Uri "http://localhost:5206/api/conversion" `
   -Method Post `
   -ContentType "application/json" `
   -Body '{"value":10,"from":"km","to":"m"}'
