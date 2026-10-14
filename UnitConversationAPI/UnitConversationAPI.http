@@ -1,0 +1,15 @@
+@UnitConversationAPI_HostAddress = http://localhost:5206
+
+### Get supported units
+GET {{UnitConversationAPI_HostAddress}}/api/conversion/units
+Accept: application/json
+
+### Convert kilometers to meters
+POST {{UnitConversationAPI_HostAddress}}/api/conversion
+Content-Type: application/json
+
+{
+  "value": 10,
+  "fromUnit": "km",
+  "toUnit": "m"
+}
